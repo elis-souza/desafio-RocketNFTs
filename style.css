@@ -1,0 +1,672 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+  }
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background: #000000;
+    overflow-x: hidden;
+    
+}
+
+header {
+    width: 100%;
+    padding: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/background.png");
+    background-size: contain;
+
+}
+
+/* Navbar Starts*/
+.navBar {
+    display: flex;
+    justify-content: center;
+}
+
+.navBar .logo img {
+    margin-right: 203px;
+    padding-top: 10px;
+}
+
+.menuList{
+    flex-direction: row;
+    height: auto;
+    padding-top: 15px;
+}
+
+.navItem:nth-child(2) {
+    margin: 0 60px 0 60px;
+}
+
+.navBar ul li {
+    display: inline;
+}
+/* Navbar Ends*/
+
+/* Carteira metamask */
+.carteira {
+    position: relative;
+    margin-left: 238px;
+    width: 230px;
+    height: 50px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.carteira img {
+    position: relative;
+    left: 14px;
+    top: 10px
+}
+
+.carteira span {
+    position: relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    left: 20px;
+    top: 0px
+}
+
+/* Content Top Starts */
+.topContent {
+    position: absolute;
+    width: 100%;
+    height: 288px;
+    left: 0;
+    top: 190px;
+    padding: 20px 280px;
+    display: flex;
+    align-items: center;
+}
+
+.textLeft {
+    position: relative;
+    width: 450px;
+    height: auto;
+    padding-right: 40px;
+}
+
+.textLeft span {
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.textLeft .artists {
+    margin-top: 50px;
+}
+
+.artistText {
+    color: #ffffff;
+    text-align: left;
+    margin-left: 180px;
+    margin-top: -40px;
+}
+
+.title h1 {
+    position: relative;
+    width: 596px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    padding-left: 523;
+}
+
+.title h1 span {
+    color: #ff5b50;
+}
+
+.imageContent {
+    width: 300px;
+    height: auto;
+}
+
+.imageContent img {
+    padding-left: 47px;
+}
+
+/* Gallery*/
+
+.galleryContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 300px;
+    top: 500px; 
+    width: 100%;
+}
+
+.galleryItem {
+    padding: 10px;
+}
+
+.galleryItem img {
+    border: 1px solid #ffffff;
+}
+
+.infoContainer {
+    background: #000000;
+    position: relative;
+    top: 477px;
+}
+
+.contentInfo{
+    height: 705px;
+}
+
+.numbersInfo {
+    width: 400px;
+    height: 646px;
+    padding: 117px 100px;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 130px;
+}
+
+.contentInfo::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 480px;
+    height: 694px;
+    border: 1px solid #5A5757;
+    transform: rotate(179.91deg);
+}
+
+.numArt, .numSell, .numArtists {
+    padding: 20px 0;
+}
+
+
+.numArt span,
+.numSell span,
+.numArtists span {
+    position: relative;
+    top: -30px;
+    color: #5a5757;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.textInfo1 {
+    position: relative;
+    top: -574px;
+    width: 480px;
+    padding: 25px 0;
+    margin-left: 564px;
+}
+
+.textInfo1 p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.textInfo1 span {
+    color: #ff5b50;
+    text-decoration: underline;
+}
+
+.textInfo2 {
+    position: relative;
+    top: -800px;
+    width: 480px;
+    padding: 25px 0;
+    margin-left: 1160px;
+}
+
+.textInfo2 p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.textInfo2 span {
+    color: #ff5b50;
+    text-decoration: underline;
+}
+
+.imageInfo {
+    position: relative;
+    top: -765px;
+    margin: 0 0 0 482px;
+}
+
+.imageInfo img {
+    width: 100%;
+}
+
+.lineH {
+    position: relative;
+    top: -770px;
+    border-bottom: 1px solid #5a5757;
+}
+
+/* Content Top Ends */
+
+
+/*Populares da semana starts*/
+.contentPop {
+    display: flex;
+}
+.popContainer {
+    position: relative;
+    background: #000000;
+    width: 100%;
+    height: 1170px;
+    z-index: 50;
+    top: 480px;
+}
+
+.titlePop {
+    padding: 100px 0 100px 180px;
+}
+
+.titlePop h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.titlePop span {
+    color: #ff5b50;
+}
+
+.boxCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 468px;
+    margin-left: 122px;
+    margin-bottom: 90px;
+}
+
+.imagemSeta {
+    position: relative;
+    top: -37px;
+}
+
+.imagemSeta img {
+    padding-left: 310px;
+    margin-top: -42px;
+}
+
+.boxCards h3 {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: normal;
+    margin-left: -130px;
+    margin-bottom: 17px;
+}
+
+.astronautPic img {
+    padding-left: 0!important;
+    margin-top: 46px;
+}
+
+.infoText-Atro {
+    color: #5A5757;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: -226px;
+    margin-top: 17px;
+}
+
+.name2 {
+    margin-left: -166px!important;
+}
+
+.name3 {
+    margin-left: -166px!important;
+}
+
+.name4 {
+    margin-left: -196px!important;
+}
+
+.infoText-AtroD {
+    color: #ff5b50;
+    margin-left: 270px;
+    margin-top: -19px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.containerBoxesLeft {
+    padding-left: 60px;
+}
+
+.containerBoxesRight {
+    position: relative;
+    top: -919px;
+    left: 1100px;
+}
+
+
+.lineCards::after {
+    content: '';
+    position: absolute;
+    top: 250px;
+    left: 930px;
+    height: 794px;
+    border-left: 1px solid #5A5757;
+    transform: rotate(179.91deg);
+}
+
+/*Melhores artistas */
+.containerMelhores {
+    position: relative;
+    background: #000000;
+    width: 100%;
+    height: 700px;
+    z-index: 51;
+    top: 480px;
+}
+
+.melhoresArts {
+    display: flex;
+    justify-content: center;
+}
+
+.titleMelhores {
+    padding: 60px 0 30px 0;
+}
+
+.titleMelhores h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.titleMelhores span {
+    color: #ff5b50;
+}
+
+/* Cards dos artistas */
+.boxCards-arts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boxCards-arts section.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background: #252525;
+    padding: 1rem 1.5rem;
+    max-height: 468px;
+    margin-left: 106px;
+    margin-bottom: 70px;
+}
+
+.boxCards-arts section.card:first-child {
+    margin-left: 0;
+}
+
+.boxCards-arts section.card .icon {
+   width: 150px;
+   height: 150px; 
+}
+
+.boxCards-arts section.card img {
+    width: 100%;
+}
+
+.boxCards-arts section.card h3 {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 16px 0;
+}
+
+.boxCards-arts section.card span {
+    color: #ff5b50;
+    font-weight: 200;
+    max-width: 240px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.descriptionIcon {
+    padding: 32px;
+    text-align: left;
+}
+
+.boxCards-arts section.card:hover  {
+    background: #ff5b50!important;
+    color: #ffffff;
+}
+
+.boxCards-arts section.card:hover span{
+    background: #ff5b50!important;
+    color: #ffffff;
+}
+
+.text-artists {
+    color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.text-artists img {
+    padding-left: 30px;
+}
+
+/* Footer starts*/
+
+
+.containerFooter {
+    background: #252525;
+    position: absolute;
+    width: 100%;
+    height: 740px!important;
+    left: -1px;
+    top: 3728px;
+}
+
+.footer-info1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 350px 60px 350px;
+}
+
+.logoFooter img {
+    padding-top: 0px;
+}
+
+.arrowButton-f {
+    background: #ff5b50;
+    width: 80px;
+    height: 80px;
+}
+
+.arrowButton-f img {
+    text-align: center;
+    padding: 27px;
+}
+
+.lineF {
+    position: relative;
+    top: 0;
+    border-bottom: 1px solid #5a5757;
+}
+
+.contactFooter {
+    display: flex;
+}
+
+.infoContact1 {
+    width: 490px;
+    padding: 80px 90px 20px 90px;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 30px;
+    text-align: left;
+}
+
+.infoContact1 span {
+    color: #ff5b50;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.imputArea {
+    position: relative;
+    top: 180px;
+    left: -400px;
+    width: 440px;
+}
+
+.input-field input {
+    background: #0D0D0D;
+    outline: none;
+    font-size: 20px;
+    color: #ffffff;
+    width: 280px;
+    height: 66px;
+}
+
+.input-field input::placeholder {
+    color: #5A5757;
+    padding-left: 30px;
+}
+
+form input[type="submit"] {
+    position: relative;
+    left: 282px;
+    top: -64px;
+    padding: 19px;
+    background: #ffffff;
+    cursor: pointer;
+    color: #252525;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    width: 122px;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background: #ff5b50;
+    color: #ffffff;
+}
+
+
+.imputArea::after {
+    content: '';
+    position: absolute;
+    top: -180px;
+    left: 480px;
+    height: 354px;
+    border: 1px solid #5A5757;
+    transform: rotate(179.91deg);
+}
+
+.lineF-2 {
+    position: relative;
+    top: 181px;
+    border-bottom: 1px solid #5a5757;
+}
+
+.linksFooter {
+    position: absolute;
+    top: 302px;
+    padding-left: 790px;
+    width: auto;
+    height: 280px;
+}
+
+.company, 
+.map, 
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.map {
+    position: relative;
+    top: -220px;
+    left: 290px;
+}
+
+.links {
+    position: relative;
+    top: -438px;
+    left: 616px;
+}
+
+.company h3, 
+.map h3, 
+.links h3 {
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.company a, 
+.map a, 
+.links a {
+    padding: 10px;
+    color: #5A5757;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.footer-info2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 300px;
+    position: relative;
+    top: 224px;
+}
+
+.siteFooter {
+    color: #5A5757;
+}
+
+.socialMedia img {
+    padding: 20px;
+}
